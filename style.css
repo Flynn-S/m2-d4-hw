@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&family=Open+Sans&display=swap');
+
+h1 {
+    font-family: 'Exo', sans-serif;
+}
+
+
+#submit-btn {
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#dropdownMenuButton1 {
+    display: block;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

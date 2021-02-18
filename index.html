@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+    WELCOME TO THE STRIVE TEAM GENERATOR!
+
+    The app is pretty straight forward, use Bootstrap to add the following features:
+    - The user can add a list of names
+    - The user can set the number of teams
+    - Every time the user clicks on the "assign" button, a random name is placed in a team and removed from the list
+    - Each team should be inside a "column"
+    - [EXTRA] Create a button to remove an user from a team, putting him back in the main list
+    - [EXTRA] Create a button to reset the state of the app
+-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="heading text-center my-3">
+      <h1>Weclome to the strive team generator!</h1>
+      </div>
+                              <!-- submit name input and button -->
+      <div class="container my-2 py-1 w-50 border rounded border-primary">
+          <label for="names" class="form-label">Enter a name</label>
+          <input type="text" class="form-control" id="names" placeholder="name">
+          <button type="button" class="btn btn-primary my-2" id="submit-btn" onclick="submitName()">Submit</button>
+      </div>
+                              <!-- dropdown team button -->
+      <div class="container my-2 py-1 w-50 border rounded border-primary text-center">
+          
+          <label for="ndropdownMenuButton1" class="form-label">Select the number of Teams</label>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Number of Teams
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+      </div>
+
+                                <!-- Assign Teams button -->
+      <div class="container my-2 py-1 w-50 border rounded border-primary">
+        <label for="assign-btn" class="form-label">Assign a Team</label>
+        <button type="button" class="btn btn-primary my-2" id="assign-btn" onclick="assignTeam()">Assign Team</button>
+      </div>
+    </div>
+  
+    
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    
+    
+    <script>
+
+      // for (let i = 1; i <= 76; i++) {
+      //     const child = document.createElement("div"); // this will create an empty container for the numbers
+      //     child.className = "BBnum"; // assigning the CSS class for the container
+
+      //     const BBnum = document.createElement("h3"); //label for bingoboard number
+      //     BBnum.className = "BBnumHeading"
+      //     BBnum.innerText = i; //adding the number 1-76 as innerText of the newly created div
+      //     child.appendChild(BBnum); //adding the <h3> inside the bingo board cell
+      //     bingoBoard.appendChild(child); //adding the day cell inside the bingoBoard div
+      //   }
+        
+        const submitName = function (event) {
+
+        }
+
+        const assignTeam = function (event) {
+
+        }
+
+    </script>
+  </body>
+</html>
